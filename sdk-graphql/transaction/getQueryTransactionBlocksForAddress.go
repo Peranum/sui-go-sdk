@@ -3,7 +3,6 @@ package transaction
 import (
 	"context"
 	"sui-go-sdk/shared"
-
 	"github.com/machinebox/graphql"
 )
 
@@ -13,26 +12,36 @@ func QueryTransactionBlockDetailsByDigest(digest string) (map[string]interface{}
 
 	query := `
 		query ($digest: String!) {
-			transactionBlock(digest: $digest) {
-				gasInput {
-					gasSponsor {
-						address
-					}
-					gasPrice
-					gasBudget
-				}
-				effects {
-					status
-					timestamp
-					checkpoint {
-						sequenceNumber
-					}
-					epoch {
-						epochId
-						referenceGasPrice
-					}
-				}
+		transactionBlock(digest: $digest) {
+			digest
+			sender {
+			address
 			}
+			gasInput {
+			gasSponsor {
+				address
+			}
+			gasPrice
+			gasBudget
+			}
+			
+			signatures
+			effects {
+			status
+			timestamp
+			checkpoint {
+				sequenceNumber
+			}
+			epoch {
+				epochId
+				referenceGasPrice
+			}
+			}
+			expiration {
+			epochId
+			}
+			bcs
+		}
 		}
 	`
 
