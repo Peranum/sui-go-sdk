@@ -2,7 +2,7 @@ package transaction
 
 import (
 	"context"
-	"sui-go-sdk/shared"
+	"github.com/Peranum/sui-go-sdk/shared"
 	"github.com/machinebox/graphql"
 )
 // QueryTransactionBlocksWithBalanceChanges performs a GraphQL query to fetch transaction blocks with balance changes

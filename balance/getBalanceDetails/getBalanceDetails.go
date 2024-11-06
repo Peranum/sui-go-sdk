@@ -5,7 +5,7 @@ import (
     "encoding/json"
     "io"
     "net/http"
-    "sui-go-sdk/shared" // Import shared package
+    "github.com/Peranum/sui-go-sdk/shared" // Import shared package
     "fmt"
 )
 

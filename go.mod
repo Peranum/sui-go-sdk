@@ -1,4 +1,4 @@
-module sui-go-sdk
+module github.com/Peranum/sui-go-sdk
 
 go 1.23.1
 

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"sui-go-sdk/shared"
+	"github.com/Peranum/sui-go-sdk/shared"
 )
 
 // SuiTransactionRequestOptions represents options for the transaction request.

@@ -2,7 +2,7 @@ package transaction
 
 import (
 	"context"
-	"sui-go-sdk/shared"
+	"github.com/Peranum/sui-go-sdk/shared"
 	"github.com/machinebox/graphql"
 )
 

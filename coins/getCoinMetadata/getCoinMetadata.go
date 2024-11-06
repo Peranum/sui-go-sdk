@@ -5,7 +5,7 @@ import (
     "encoding/json"
     "io"
     "net/http"
-    "sui-go-sdk/shared"
+    "github.com/Peranum/sui-go-sdk/shared"
 )
 
 // CoinMetadata represents the metadata structure for a coin.
